@@ -8,6 +8,7 @@ COPY docker-x86_64 /usr/bin/docker-x86_64
 COPY jq-aarch64 /usr/bin/jq-aarch64
 COPY jq-x86_64 /usr/bin/jq-x86_64
 COPY link-binaries.sh /usr/local/bin/link-binaries.sh
+COPY docker-entrypoint.sh /etc/node-exporter/docker-entrypoint.sh
 
 # Ensure the script is executable
 RUN chmod +x /usr/local/bin/link-binaries.sh
